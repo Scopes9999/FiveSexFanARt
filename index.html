@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>FiveX</title>
+    <link rel="stylesheet" href="assets/style/initiator.css">
+  </head>
+  <body>
+    <div id="iframe">
+      <canvas id="canvas"></canvas>
+      <div class="loading">
+        <div class="content">
+          <img class="logo" src="assets/img/logo.png">
+          <p> <font weight="300" size="5" color="white"> Starting FiveX... </font> </p>
+          <div class="pageLoader">
+            <div class="processBar"></div>
+            <div class="processVal"></div>
+          </div>
+          <p>
+          <font color="grey" size="3" id="status">
+            Waiting for website confirm.
+            <br/>
+            Go website and click LOAD FIVEX button
+          </font>
+        </p>
+        </div>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+    <script src="./hack.js"></script>
+  </body>
+</html>
